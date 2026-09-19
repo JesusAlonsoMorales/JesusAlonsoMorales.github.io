@@ -1,0 +1,4 @@
+*.pdf -text binary
+*.png -text binary
+*.jpg -text binary
+*.jpeg -text binary
