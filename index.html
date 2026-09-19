@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesús Alonso · Data Analyst</title>
+<meta name="description" content="Jesús Alonso — Data Analyst & Business Intelligence. Portfolio interactivo: proyectos, experiencia y contacto.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="noise"></div>
+<div class="grid-bg"></div>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="nav">
+  <a href="#inicio" class="nav-brand">JA<span class="dot">.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a>
+    <a href="#sobre-mi" class="nav-link" data-section="sobre-mi">Sobre mí</a>
+    <a href="#proyectos" class="nav-link" data-section="proyectos">Proyectos</a>
+    <a href="#experiencia" class="nav-link" data-section="experiencia">Experiencia</a>
+    <a href="#contacto" class="nav-link" data-section="contacto">Contacto</a>
+  </nav>
+  <a href="#contacto" class="nav-cta">Hablemos</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow reveal">📍 Data Analyst · Business Intelligence</p>
+      <h1 class="hero-title reveal">
+        Hola, soy <span class="highlight">Jesús Alonso</span>.<br>
+        Convierto <span class="typed-wrap"><span id="typed"></span><span class="cursor">|</span></span>
+      </h1>
+      <p class="hero-sub reveal">
+        +10 años leyendo negocio desde el control de gestión y las finanzas — ahora aplicados
+        al dato: modelado, automatización y análisis para que la información llegue lista a quien decide.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-ghost">Contactar</a>
+      </div>
+      <div class="hero-stack reveal">
+        <span>Power BI</span><span>SQL</span><span>Python</span><span>Power Query</span><span>DAX</span><span>Power Automate</span>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" aria-hidden="true">
+      <div class="chart-card">
+        <div class="chart-card-head">
+          <span class="chart-dot"></span>
+          <span class="chart-dot"></span>
+          <span class="chart-dot"></span>
+          <span class="chart-title">kpi_dashboard.pbix</span>
+        </div>
+        <svg viewBox="0 0 320 160" class="chart-svg">
+          <polyline class="chart-line" points="0,120 40,100 80,110 120,70 160,85 200,40 240,55 280,20 320,35" />
+          <polyline class="chart-area" points="0,120 40,100 80,110 120,70 160,85 200,40 240,55 280,20 320,35 320,160 0,160" />
+        </svg>
+        <div class="chart-bars">
+          <span style="height:40%"></span><span style="height:65%"></span><span style="height:35%"></span>
+          <span style="height:80%"></span><span style="height:55%"></span><span style="height:95%"></span>
+          <span style="height:70%"></span>
+        </div>
+        <div class="chart-kpis">
+          <div><strong>100M€</strong><small>seguimiento gestionado</small></div>
+          <div><strong>17</strong><small>queries de negocio</small></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== SOBRE MÍ ===== -->
+  <section id="sobre-mi" class="section">
+    <div class="section-head reveal">
+      <span class="section-num">01</span>
+      <h2>Sobre mí</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Vengo del control de gestión y las finanzas: más de una década transformando
+          información financiera y operativa en presupuestos, KPIs, reporting a dirección
+          y cuadros de mando. He hecho seguimiento de planes operativos de hasta
+          <strong>100 M€</strong> en compañías como <strong>Repsol</strong> y
+          <strong>Red Eléctrica de España</strong>.
+        </p>
+        <p>
+          Ahora llevo esa visión de negocio al dato: modelado, automatización y programación
+          para que la información llegue lista a quien decide. Estoy terminando un
+          <strong>Máster en Data Analytics</strong> (finalización: diciembre de 2026).
+        </p>
+      </div>
+
+      <div class="about-cards reveal">
+        <div class="mini-card">
+          <span class="mini-icon">🧭</span>
+          <h3>Lectura de negocio</h3>
+          <p>Sé qué pregunta hay detrás de cada informe.</p>
+        </div>
+        <div class="mini-card">
+          <span class="mini-icon">📈</span>
+          <h3>Análisis de KPIs</h3>
+          <p>Desviaciones y tendencias sobre datos financieros y operativos.</p>
+        </div>
+        <div class="mini-card">
+          <span class="mini-icon">⚙️</span>
+          <h3>Modelado y automatización</h3>
+          <p>Procesos de reporting que se sostienen en el tiempo.</p>
+        </div>
+        <div class="mini-card">
+          <span class="mini-icon">🔍</span>
+          <h3>Traducción de requisitos</h3>
+          <p>De un requisito ambiguo a un modelo de datos sólido.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack-section reveal">
+      <p class="stack-label">Uso habitual</p>
+      <div class="tag-row">
+        <span class="tag tag-main">Power BI</span>
+        <span class="tag tag-main">SQL</span>
+        <span class="tag tag-main">Python</span>
+        <span class="tag tag-main">Excel avanzado</span>
+        <span class="tag tag-main">Power Query</span>
+        <span class="tag tag-main">Power Pivot</span>
+        <span class="tag tag-main">DAX</span>
+        <span class="tag tag-main">Power Automate</span>
+      </div>
+      <p class="stack-label">También he trabajado con</p>
+      <div class="tag-row">
+        <span class="tag">Tableau</span>
+        <span class="tag">SAP</span>
+        <span class="tag">Oracle Primavera P6</span>
+        <span class="tag">Salesforce</span>
+        <span class="tag">Estadística / ML</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section id="proyectos" class="section">
+    <div class="section-head reveal">
+      <span class="section-num">02</span>
+      <h2>Proyectos</h2>
+    </div>
+
+    <div class="projects">
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-icon">🧾</span>
+          <div class="project-links">
+            <a href="https://github.com/JesusAlonsoMorales/Automatizacion-partes-de-trabajo" target="_blank" rel="noopener" class="icon-link" title="Ver repositorio">Código</a>
+            <a href="https://jesusalonsomorales.github.io/Automatizacion-partes-de-trabajo/" target="_blank" rel="noopener" class="icon-link icon-link-primary" title="Ver panel en vivo">Demo en vivo ↗</a>
+          </div>
+        </div>
+        <h3>Modelo de partes de trabajo — coste de nómina e ingresos</h3>
+        <p>
+          Automatiza el cálculo de coste de nómina e importe a facturar a partir de partes de
+          horas de campo: formulario → SharePoint → Power Automate → Excel (Power Query + Power
+          Pivot + DAX). Usa una <strong>doble clave</strong> (<code>Key_nomina</code> /
+          <code>Key_variable</code>) para que reclasificar la facturación de un cliente
+          <strong>no altere el histórico</strong> de coste de personal ya cerrado.
+        </p>
+        <div class="tag-row small">
+          <span class="tag">Power Query (M)</span>
+          <span class="tag">Power Pivot</span>
+          <span class="tag">DAX</span>
+          <span class="tag">SharePoint</span>
+          <span class="tag">Power Automate</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-icon">🗃️</span>
+          <div class="project-links">
+            <a href="https://github.com/JesusAlonsoMorales/sql-ecommerce-analytics" target="_blank" rel="noopener" class="icon-link" title="Ver repositorio">Código</a>
+          </div>
+        </div>
+        <h3>ShopSphere — Portfolio de Analítica SQL</h3>
+        <p>
+          Tienda online en MySQL con esquema normalizado (7 tablas), ~20.000 filas de datos
+          sintéticos y <strong>17 consultas de negocio real</strong>: segmentación RFM, retención
+          por cohortes, crecimiento mes a mes y devoluciones por categoría. Un hallazgo: el 15%
+          de clientes "en riesgo de fuga" concentra casi tanto valor histórico como los más fieles.
+        </p>
+        <div class="tag-row small">
+          <span class="tag">MySQL</span>
+          <span class="tag">Funciones de ventana</span>
+          <span class="tag">CTEs</span>
+          <span class="tag">Procedimientos almacenados</span>
+        </div>
+      </article>
+
+      <article class="project-card project-card-progress reveal">
+        <div class="project-top">
+          <span class="project-icon">💼</span>
+          <span class="status-pill">En curso</span>
+        </div>
+        <h3>Análisis del mercado laboral tech</h3>
+        <p>
+          Proyecto end-to-end: extracción con Python → limpieza y unión de tablas →
+          transformación en Power Query → análisis de tendencias en puestos tech.
+          Se publicará al cerrar el análisis.
+        </p>
+        <div class="tag-row small">
+          <span class="tag">Python</span>
+          <span class="tag">Power Query</span>
+          <span class="tag">MCP</span>
+        </div>
+      </article>
+
+    </div>
+
+    <a href="https://github.com/JesusAlonsoMorales" target="_blank" rel="noopener" class="more-link reveal">
+      Ver todos los repositorios en GitHub →
+    </a>
+  </section>
+
+  <!-- ===== EXPERIENCIA ===== -->
+  <section id="experiencia" class="section">
+    <div class="section-head reveal">
+      <span class="section-num">03</span>
+      <h2>Experiencia &amp; Formación</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024 — actualidad</span>
+          <h3>Control Financiero</h3>
+          <p class="timeline-org">SUMO, Servicios y Suministros</p>
+          <p>Dashboards interactivos, seguimiento de KPIs con segmentadores y líneas de tiempo,
+            modelos en Power Pivot / Power Query y automatización con Power Automate.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2016 — 2021</span>
+          <h3>Técnico de Control de Costes</h3>
+          <p class="timeline-org">Repsol, S.A.</p>
+          <p>Seguimiento de planes operativos y control de costes en una compañía de referencia
+            del sector energético.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Experiencia previa</span>
+          <h3>Análisis de costes, presupuestos y reporting a dirección</h3>
+          <p class="timeline-org">Red Eléctrica de España · Global Energy Services · Agrícola El Bosque</p>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-edu reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Finalización prevista: dic. 2026</span>
+          <h3>Máster en Data Analytics</h3>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-edu reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Formación</span>
+          <h3>Doble Grado en ADE y Finanzas</h3>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-edu reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Certificación · Udemy</span>
+          <h3>Power BI</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto" class="section contact-section">
+    <div class="section-head reveal">
+      <span class="section-num">04</span>
+      <h2>Hablemos</h2>
+    </div>
+
+    <div class="contact-inner reveal">
+      <p class="contact-lead">
+        ¿Buscas un perfil que una negocio y datos? Escríbeme, con gusto lo hablamos.
+      </p>
+      <div class="contact-actions">
+        <a href="mailto:chusalonsomorales@gmail.com" class="btn btn-primary">✉️ chusalonsomorales@gmail.com</a>
+      </div>
+      <div class="contact-social">
+        <a href="https://www.linkedin.com/in/jes%C3%BAs-manuel-alonso-morales-064b7a15a/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/JesusAlonsoMorales" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Diseñado &amp; construido por Jesús Alonso · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
