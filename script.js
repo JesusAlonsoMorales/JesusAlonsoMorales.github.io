@@ -52,7 +52,36 @@ revealEls.forEach(el => revealObserver.observe(el));
 // Typed text effect in hero
 const phrases = ['datos en decisiones.', 'números en negocio.', 'hojas de cálculo en modelos.', 'reporting en automatización.'];
 const typedEl = document.getElementById('typed');
+const typedWrap = document.querySelector('.typed-wrap');
 let phraseIndex = 0, charIndex = 0, deleting = false;
+
+// Reserva el ancho de la frase más larga para que el texto de abajo no salte
+// al cambiar de frase.
+function setTypedWidth() {
+  const cs = getComputedStyle(typedEl);
+  const measurer = document.createElement('span');
+  measurer.style.position = 'absolute';
+  measurer.style.visibility = 'hidden';
+  measurer.style.whiteSpace = 'nowrap';
+  measurer.style.fontFamily = cs.fontFamily;
+  measurer.style.fontSize = cs.fontSize;
+  measurer.style.fontWeight = cs.fontWeight;
+  measurer.style.letterSpacing = cs.letterSpacing;
+  document.body.appendChild(measurer);
+  let max = 0;
+  phrases.forEach(p => {
+    measurer.textContent = p;
+    max = Math.max(max, measurer.getBoundingClientRect().width);
+  });
+  document.body.removeChild(measurer);
+  typedWrap.style.minWidth = Math.ceil(max) + 'px';
+}
+setTypedWidth();
+let typedResizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(typedResizeTimer);
+  typedResizeTimer = setTimeout(setTypedWidth, 150);
+});
 
 function typeLoop() {
   const current = phrases[phraseIndex];

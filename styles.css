@@ -104,7 +104,7 @@ section{position:relative}
   margin-bottom:22px;
 }
 .hero-title .highlight{color:var(--accent)}
-.typed-wrap{color:var(--accent-2);white-space:nowrap}
+.typed-wrap{color:var(--accent-2);white-space:nowrap;display:inline-block;vertical-align:top}
 .cursor{display:inline-block;color:var(--accent-2);animation:blink 1s step-start infinite}
 @keyframes blink{50%{opacity:0}}
 
