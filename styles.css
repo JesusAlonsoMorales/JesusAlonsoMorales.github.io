@@ -235,6 +235,15 @@ section{position:relative}
   .live-embed iframe{height:420px}
 }
 
+.project-shot{
+  margin-top:4px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--bg-alt);
+}
+.project-shot img{width:100%;display:block}
+.project-shot figcaption{
+  padding:10px 14px;font-size:.78rem;color:var(--text-dim);border-top:1px solid var(--border);
+  background:var(--surface);
+}
+
 .stat-strip{display:flex;flex-wrap:wrap;gap:22px;padding:16px 0;border-top:1px solid var(--border);margin-top:4px}
 .stat-strip strong{display:block;font-family:var(--font-display);font-size:1.2rem;color:var(--accent)}
 .stat-strip small{color:var(--text-faint);font-size:.72rem}
