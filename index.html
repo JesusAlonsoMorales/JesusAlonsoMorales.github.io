@@ -225,27 +225,13 @@
         </div>
         <h3>Portfolio de Analítica SQL + Power BI</h3>
         <p>
-          Tienda online en MySQL con esquema normalizado (7 tablas), ~20.000 filas de datos
-          sintéticos y <strong>17 consultas de negocio real</strong>: segmentación RFM, retención
-          por cohortes, crecimiento mes a mes y devoluciones por categoría. Un hallazgo: el 15%
-          de clientes "en riesgo de fuga" concentra casi tanto valor histórico como los más fieles.
-        </p>
-        <p>
-          El mismo análisis, modelado después en <strong>Power BI</strong>: medidas DAX
-          (RFM, MoM, margen, devoluciones), una tabla de clientes con <strong>drillthrough por
-          segmento</strong> y KPIs de cabecera calculados en el propio modelo — no solo el
-          gráfico, también la lógica de negocio detrás.
-        </p>
-        <p>
-          La segmentación RFM no se queda en "5 grupos de clientes": cada uno lleva asociada
-          una <strong>acción de negocio concreta</strong> — Campeón → fidelizar, En riesgo (alto
-          valor) → contacto prioritario, Perdido/Fugado → campaña de reactivación, Nuevo/Prometedor
-          → onboarding, Regular → seguimiento estándar. La página de detalle baja ese razonamiento
-          hasta el cliente individual, con sus puntuaciones R/F/M y la acción que le corresponde.
+          Tienda online en MySQL (17 consultas de negocio: RFM, cohortes, márgenes) llevada a un
+          modelo de Power BI con drillthrough. Cada segmento RFM lleva una <strong>acción de
+          negocio concreta</strong> —no solo una etiqueta— hasta el cliente individual.
         </p>
         <figure class="project-shot">
           <img src="assets/sql-powerbi-detalle-rfm.png" alt="Detalle de clientes por segmento RFM en Power BI, con puntuaciones R/F/M y acción sugerida por cliente" loading="lazy">
-          <figcaption>Detalle de segmento (drillthrough): puntuaciones R/F/M, acción sugerida y dispersión Frecuencia/Monetario/Recencia por cliente.</figcaption>
+          <figcaption>Detalle por segmento: puntuación R/F/M y acción sugerida por cliente.</figcaption>
         </figure>
         <div class="tag-row small">
           <span class="tag">MySQL</span>

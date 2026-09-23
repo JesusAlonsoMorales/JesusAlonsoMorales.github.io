@@ -218,7 +218,7 @@ section{position:relative}
   transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease;
 }
 .project-card:hover{transform:translateY(-6px);border-color:var(--accent-dim);box-shadow:0 24px 40px -20px rgba(0,0,0,.5)}
-.project-card-progress{border-style:dashed;opacity:.85}
+.project-card-progress{border-style:dashed;opacity:.85;align-self:start}
 .project-card-wide{grid-column:1 / -1}
 
 .live-embed{
