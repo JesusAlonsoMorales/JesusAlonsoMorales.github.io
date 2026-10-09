@@ -289,6 +289,8 @@ section{position:relative}
 .timeline-content h3{font-family:var(--font-display);font-size:1.1rem;margin-bottom:4px}
 .timeline-org{color:var(--text-dim);font-size:.9rem;margin-bottom:8px;font-weight:500}
 .timeline-content p:not(.timeline-org){color:var(--text-faint);font-size:.9rem;max-width:600px}
+.timeline-content p a{color:var(--accent);border-bottom:1px solid var(--accent-soft)}
+.timeline-content p a:hover{border-bottom-color:var(--accent)}
 
 /* ===== CONTACT ===== */
 .contact-section{padding-bottom:100px}
